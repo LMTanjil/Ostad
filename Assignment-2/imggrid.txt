@@ -1,0 +1,24 @@
+<div class="hidden md:block lg:col-span-6 relative h-[500px] w-full max-w-[550px] mx-auto">
+          <div class="absolute top-0 left-0 w-[60%] h-[85%] rounded-[24px] overflow-hidden shadow-xs">
+            <img src="assets/images/doctorTeam.jpg" class="w-full h-full object-cover" alt="Expert Clinical Team">
+          </div>
+          <div class="absolute top-0 right-0 w-[35%] h-[30%] bg-[#0E9488] text-white rounded-[24px] flex flex-col items-center justify-center text-center p-2 shadow-xs z-10">
+            <p class="text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight">
+              85%
+            </p>
+            <p class="text-[10px] lg:text-[13px] text-teal-100 font-medium leading-snug mt-1">
+              Successfully<br>Diagnosis
+            </p>
+          </div>
+          <div class="absolute bottom-[0%] left-[0%] w-[43%] h-[10%] bg-[#0E9488] text-white px-4 rounded-[20px] flex items-center gap-3 shadow-xs z-10">
+            <div class="w-6 h-6 bg-white rounded-full flex items-center justify-center text-[#0E9488] shrink-0">
+              <i class="fa-solid fa-check text-xs font-bold"></i>
+            </div>
+            <p class="text-[10px] font-bold leading-snug">
+              With 15+ years of<br>experience
+            </p>
+          </div>
+          <div class="absolute bottom-0 right-0 w-[55%] h-[68%] rounded-[24px] overflow-hidden shadow-xs border-4 lg:border-6 border-white">
+            <img src="assets/images/diagnosis.jpg" class="w-full h-full object-cover" alt="Advanced Surgical Environment">
+          </div>
+        </div>

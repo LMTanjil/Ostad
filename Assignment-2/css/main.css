@@ -1,0 +1,110 @@
+@import 'tailwindcss';
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@theme {
+  --color-main: #FFFFFF;
+  --color-sec:#155DFC;
+  --color-third: #0D9488;
+  --color-acc-white: rgb(204 221 255 / 0.78);
+  --color-txt-main: #333333;
+  --color-txt-sec: #7A7A7A;
+  --font-inter: 'Inter', sans-serif;
+  --font-poppins: 'Poppins', sans-serif;
+
+}
+
+@layer base {
+  *,
+  *::before,
+  *::after {
+    @apply p-0 m-0 box-border scroll-smooth;
+  }
+  html {
+    @apply overflow-x-hidden flex w-full justify-center;
+  }
+  body {
+    @apply bg-main w-full flex flex-col items-center;
+  }
+  header,section,footer{
+    @apply w-full flex justify-center;
+  }
+  .cmn-wrapper {
+    @apply max-w-285 w-full;
+  }
+  header .inner{
+    @apply w-full
+  }
+
+  /*drop downlink style*/
+  .dropbtn {
+    @apply bg-third text-main px-4 py-4 text-base border-0 cursor-pointer;
+  }
+
+  .dropdown {
+    @apply relative;
+  }
+
+  .dropdown-content {
+    @apply hidden absolute bg-[#f9f9f9] min-w-50 shadow-[0px_8px_16px_0px_rgba(0,0,0,0.2)];
+  }
+
+  .dropdown-content a {
+    @apply text-black px-4 py-3 no-underline block;
+  }
+
+  .dropdown-content a:hover {
+    @apply bg-[#f1f1f1];
+  }
+
+  .dropdown:hover .dropdown-content {
+    @apply block;
+  }
+
+  .dropdown:hover .dropbtn {
+    @apply bg-third;
+  }
+  /* ** Top Bar Styles ** */
+  .top-bar{
+    @apply flex justify-center bg-sec;
+  }
+  .top-bar .cmn-wrapper{
+    @apply flex items-center justify-between py-3;
+  }
+  .contact-info{
+    @apply flex items-center justify-center gap-3;
+  }
+  .contact-info a{
+    @apply flex items-center justify-center gap-1;
+  }
+  .contact-info a,.contact-info span{
+    @apply text-base/7 text-main;
+  }
+  .utility-links{
+    @apply flex gap-2 text-main items-center text-base;
+  }
+  .nav-links ul li a{
+    @apply text-base text-main;
+  }
+  .nav-cta{
+    @apply flex items-center gap-1 text-sm font-medium focus:outline-none;
+  }
+/*  main nav*/
+  .main-nav{
+    @apply flex items-center justify-center py-2;
+  }
+  .nav.inner{
+    @apply flex items-center justify-between;
+  }
+  .logo-wrap{
+    @apply flex items-center justify-center gap-2 text-[28px] font-semibold font-poppins leading-tight text-third;
+    img{
+      @apply  w-9 h-auto object-contain object-center ;
+    }
+  }
+  .nav-links-wrap{
+    @apply flex items-center gap-8;
+  }
+  .nav-links-wrap ul{
+    @apply flex items-center gap-4;
+  }
+}

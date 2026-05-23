@@ -1,0 +1,13 @@
+# Build and dependency directories
+node_modules/
+build/
+.next/
+
+# Lock files and system files
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+.DS_Store
+
+# Media or static assets if needed
+public/
