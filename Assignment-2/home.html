@@ -101,61 +101,40 @@
               <div class="nav-links-wrap">
                 <ul>
                   <li>
-                    <div class="dropdown">
-                      <a href="/home">
-                        <span>Home</span>
-                        <i class="fa-solid fa-angle-down"></i>
-                      </a>
-                      <div class="dropdown-content">
-                        <a href="#">Link 1</a>
-                        <a href="#">Link 2</a>
-                        <a href="#">Link 3</a>
-                      </div>
-                    </div>
+                    <a href="">
+                      Home
+                      <i class="fa-solid fa-angle-down"></i>
+                    </a>
                   </li>
                   <li>
-                    <div class="dropdown">
-                      <a href="/shop">
-                        <span>Shop</span>
-                        <i class="fa-solid fa-angle-down"></i>
-                      </a>
-                      <div class="dropdown-content">
-                        <a href="#">Link 1</a>
-                        <a href="#">Link 2</a>
-                        <a href="#">Link 3</a>
-                      </div>
-                    </div>
+                    <a href="">
+                      Shop
+                      <i class="fa-solid fa-angle-down"></i>
+                    </a>
                   </li>
                   <li>
-                    <div class="dropdown">
-                      <a href="/pages">
-                        <span>Pages</span>
-                        <i class="fa-solid fa-angle-down"></i>
-                      </a>
-                      <div class="dropdown-content">
-                        <a href="#">Link 1</a>
-                        <a href="#">Link 2</a>
-                        <a href="#">Link 3</a>
-                      </div>
-                    </div>
-                    </li>
-                  <li>
-                    <div class="dropdown">
-                      <a href="/blog">
-                        <span>Blog</span>
-                        <i class="fa-solid fa-angle-down"></i>
-                      </a>
-                      <div class="dropdown-content">
-                        <a href="#">Link 1</a>
-                        <a href="#">Link 2</a>
-                        <a href="#">Link 3</a>
-                      </div>
-                    </div>
+                    <a href="">
+                      Pages
+                      <i class="fa-solid fa-angle-down"></i>
+                    </a>
                   </li>
-                  <li><a href="/contact">Contact</a></li>
+                  <li>
+                    <a href="">
+                      Blog
+                      <i class="fa-solid fa-angle-down"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      Contact
+                    </a>
+                  </li>
                 </ul>
                 <div class="nav-cta-wrap">
-                  <a class="appt" href="/appt">Appointment</a>
+                  <a class="primary-btn" href="/appt">
+                    <span>Appointment</span>
+                    <i class="fa fa-chevron-right text-xs mt-[0.2rem]" aria-hidden="true"></i>
+                  </a>
                 </div>
               </div>
             </div>
@@ -163,7 +142,277 @@
         </nav>
       </div>
     </header>
-    <main></main>
+    <main class="w-full flex flex-col items-center justify-center">
+      <section class="hero bg-linear-to-t from-[#0B819D45]/27 to-[#155DFC33]/20">
+
+        <div class="cmn-wrapper flex">
+          <div class="flex justify-between items-center py-28 shrink-0">
+          <!-- Left: Hero Text -->
+          <div class="flex flex-col gap-[1.25em]">
+              <!-- Badge -->
+            <span class="bg-third text-main text-base font-semibold px-4 py-2 rounded-full w-fit">
+              Health comes first
+            </span>
+
+              <!-- Heading -->
+              <h1 class="text-[96px] font-bold tracking-[1px] leading-tight text-dark relative font-poppins">
+                Smart Health<br>
+                <span class="text-sec">Solutions</span>
+                <!-- Underline squiggle decoration -->
+                <img src="svgs/shape_2.svg" alt="" class="object-center object-cover w-40 absolute right-0 top-28">
+              </h1>
+
+              <!-- Subtext -->
+              <p class="text-txt-sec text-[1.25em] leading-relaxed max-w-lg">
+                Book virtual consultations with top specialists in minutes. We put your health first. Book your appointment now
+              </p>
+
+              <!-- CTA Buttons -->
+              <div class="flex items-center gap-[1em] mt-[0.5em]">
+                <a href="#" class="primary-btn">
+                  <i class="fa-regular fa-user"></i>
+                  Find a Doctor
+                </a>
+                <a href="#"
+                   class="secondary-btn">
+                  <!-- stethoscope icon approximation -->
+                  <i class="fa-solid fa-phone-flip"></i>
+                  Emergency Help
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="relative w-full">
+
+            <img
+                    src="svgs/Vector.svg"
+                    alt="Background Shape"
+                    class="w-106 h-auto object-contain absolute right-0 top-16"
+            />
+
+            <img
+                    src="img/erasebg-transformed%201.png"
+                    alt="Doctor"
+                    class="w-full h-auto object-cover absolute top-9"
+            />
+
+          </div>
+        </div>
+      </section>
+      <section class="bg-main">
+        <div class="cmn-wrapper">
+          <div class="grid grid-cols-2 gap-[1.5em] py-40">
+            <div>
+              <div class="hidden md:block lg:col-span-6 relative h-125 w-full max-w-137.5 mx-auto">
+                <div class="absolute top-0 left-0 w-[60%] h-[85%] rounded-3xl overflow-hidden shadow-xs">
+                  <img src="img/doctor-in-loby.webp" class="w-full h-full object-cover" alt="Expert Clinical Team">
+                </div>
+                <div class="absolute top-0 right-0 px-14 py-5 bg-third text-main rounded-3xl flex flex-col items-center justify-center text-center shadow-xs z-10">
+                  <p class="text-[48px] font-bold tracking-tight">
+                    85%
+                  </p>
+                  <p class="text-4 text-main font-medium leading-snug mt-1">
+                    Successfully<br>Diagnosis
+                  </p>
+                </div>
+                <div class="absolute bottom-[0%] left-[0%] px-[2.2rem] py-[0.7rem] bg-third text-main rounded-[20px] flex items-center gap-3 shadow-xs z-10">
+                  <div class="w-6 h-6 bg-white rounded-full flex items-center justify-center text-third shrink-0">
+                    <i class="fa-solid fa-check text-base font-bold"></i>
+                  </div>
+                  <p class="text-base font-bold leading-snug">
+                    With 15+ years of<br>experience
+                  </p>
+                </div>
+                <div class="absolute bottom-0 right-0 w-[55%] h-[68%] rounded-3xl overflow-hidden shadow-xs border-t-8 border-l-8 border-main">
+                  <img src="img/doctor-surgery.webp" class="w-full h-full object-cover" alt="Advanced Surgical Environment">
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col gap-[1.25em]">
+              <!-- Sub-label -->
+              <p class="text-sec font-semibold text-[1.25em] tracking-wide">
+                Compassionate Care, Advanced Technology
+              </p>
+
+              <!-- Heading -->
+              <h2 class="text-[48px] font-bold text-txt-main leading-tight">
+                Trusted Healthcare for<br>Your Family
+              </h2>
+
+              <!-- Description -->
+              <p class="text-txt-sec text-5 leading-relaxed max-w-[32em]">
+                Since 2005, we've provided world-class medical services with a patient-first approach.
+                Our board-certified doctors and cutting-edge facilities ensure the best outcomes.
+              </p>
+
+              <!-- Feature List (2-col grid) -->
+              <div class="grid grid-cols-2 gap-y-[0.75em] gap-x-[1em] text-[0.9em] text-dark mt-[0.25em]">
+                <span class="flex items-center gap-[0.5em]">
+                  <i class="fa-solid fa-check text-third text-base"></i>
+                  24/7 Emergency Care
+                </span>
+                <span class="flex items-center gap-[0.5em]">
+                  <i class="fa-solid fa-check text-third text-base"></i>
+                  JCI-Accredited Facility
+                </span>
+                <span class="flex items-center gap-[0.5em]">
+                  <i class="fa-solid fa-check text-third text-base"></i>
+                  50+ Specialist Doctors
+                </span>
+                <span class="flex items-center gap-[0.5em]">
+                  <i class="fa-solid fa-check text-third text-base"></i>
+                  Advanced Technology
+                </span>
+                <span class="flex items-center gap-[0.5em]">
+                  <i class="fa-solid fa-check text-third text-base"></i>
+                  98% Patient Satisfaction
+                </span>
+                <span class="flex items-center gap-[0.5em]">
+                  <i class="fa-solid fa-check text-third text-base"></i>
+                  Multilingual Staff
+                  </span>
+                <span class="flex items-center gap-[0.5em]">
+                  <i class="fa-solid fa-check text-third text-base"></i>
+                  Free Consultations
+                </span>
+                <span class="flex items-center gap-[0.5em]">
+                  <i class="fa-solid fa-check text-third text-base"></i>
+                  Holistic Approach
+                </span>
+              </div>
+
+              <!-- CTA -->
+              <a href="#" class="primary-btn w-max mt-4">
+                Meet Our Team
+                <i class="fa-solid fa-angle-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bg-linear-to-t from-[#0B819D45]/27 to-[#155DFC33]/20 flex justify-center w-full relative" >
+        <img src="img/medicine.webp" alt=""
+        class="w-auto h-100 object-cover object-center absolute bottom-0 -right-20 opacity-20"
+        />
+
+        <div class="cmn-wrapper z-9">
+          <div class="flex flex-col py-[3em] w-full gap-[3em]">
+
+            <!-- Section Header -->
+            <div class="flex flex-col gap-[0.75em]">
+              <p class="text-sec font-semibold text-[1.25em] tracking-wide">
+                Our Medical Departments
+              </p>
+              <h2 class="text-[48px] font-bold text-txt-main leading-tight">
+                Complete Wellness Solutions<br>For Every Stage of Life
+              </h2>
+            </div>
+
+            <!-- Cards Grid: Row 1 -->
+            <div class="grid grid-cols-3 gap-[1.5em]">
+
+              <!-- Card 1: Neurology -->
+              <div class="group dept-card flex flex-col gap-[1em] p-[1.75em] rounded-[1em] border-2 border-acc-white hover:border-third bg-main transition-all cursor-pointer">
+                <div class="w-20 h-20 rounded-full bg-sec group-hover:bg-third flex items-center justify-center transition-colors duration-300">
+                  <img src="svgs/Brain.svg" alt="" class="w-16 h-auto aspect-square object-cover object-center">
+                </div>
+                <h3 class="font-bold text-txt-main text-[1.5em]">Neurology</h3>
+                <p class="text-txt-sec text-[1em] leading-relaxed">
+                  Advanced stroke, Alzheimer, epilepsy, and nerve disorders with cutting-edge neuroimaging and minimally.
+                </p>
+                <a href="#" class="secondary-btn w-max px-0 group-hover:text-third transition-colors duration-300">
+                  Read More
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+
+              <!-- Card 2: Neurology (featured / active) -->
+              <div class="group dept-card flex flex-col gap-[1em] p-[1.75em] rounded-[1em] border-2 border-acc-white hover:border-third bg-main transition-all cursor-pointer-md">
+                <div class="w-20 h-20 rounded-full bg-sec group-hover:bg-third flex items-center justify-center transition-colors duration-300">
+                  <img src="svgs/Brain.svg" alt="" class="w-16 h-auto aspect-square object-cover object-center">
+                </div>
+                <h3 class="font-bold text-txt-main text-[1.5em]">Neurology</h3>
+                <p class="text-txt-sec text-[1em] leading-relaxed">
+                  Advanced stroke, Alzheimer, epilepsy, and nerve disorders with cutting-edge neuroimaging and minimally.
+                </p>
+                <a href="#" class="secondary-btn w-max px-0 group-hover:text-third transition-colors duration-300" >
+                  Read More
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+
+              <!-- Card 3: Pediatrics -->
+              <div class="group dept-card flex flex-col gap-[1em] p-[1.75em] rounded-[1em] border-2 border-acc-white hover:border-third bg-main transition-all cursor-pointer">
+                <div class="w-20 h-20 rounded-full bg-sec group-hover:bg-third flex items-center justify-center transition-colors duration-300">
+                  <img src="svgs/stethoscope.svg" alt="" class="w-16 h-auto aspect-square object-cover object-center">
+                </div>
+                <h3 class="font-bold text-txt-main text-[1.5em]">Pediatrics</h3>
+                <p class="text-txt-sec text-[1em] leading-relaxed">
+                  Specialized care for children from birth to adolescence, including vaccinations, growth.
+                </p>
+                <a href="#" class="secondary-btn w-max px-0 group-hover:text-third transition-colors duration-300">
+                  Read More
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Cards Grid: Row 2 -->
+            <div class="grid grid-cols-3 gap-[1.5em]">
+
+              <!-- Card 4: Dermatology -->
+              <div class="group dept-card flex flex-col gap-[1em] p-[1.75em] rounded-[1em] border-2 border-acc-white hover:border-third bg-main transition-all cursor-pointer">
+                <div class="w-20 h-20 rounded-full bg-sec group-hover:bg-third flex items-center justify-center transition-colors duration-300">
+                  <img src="svgs/medical-case.svg" alt="" class="w-16 h-auto aspect-square object-cover object-center">
+                </div>
+                <h3 class="font-bold text-txt-main text-[1.5em]">Dermatology</h3>
+                <p class="text-txt-sec text-[1em] leading-relaxed">
+                  Medical and cosmetic skin treatments for acne, psoriasis, skin cancer screening, and anti-aging therapies.
+                </p>
+                <a href="#" class="secondary-btn w-max px-0 group-hover:text-third transition-colors duration-300">
+                  Read More
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+
+              <!-- Card 5: Maternity -->
+              <div class="group dept-card flex flex-col gap-[1em] p-[1.75em] rounded-[1em] border-2 border-acc-white hover:border-third bg-main transition-all cursor-pointer">
+                <div class="w-20 h-20 rounded-full bg-sec group-hover:bg-third flex items-center justify-center transition-colors duration-300">
+                  <img src="svgs/doctor-male-outline.svg" alt="" class="w-16 h-auto aspect-square object-cover object-center">
+                </div>
+                <h3 class="font-bold text-txt-main text-[1.5em]">Maternity</h3>
+                <p class="text-txt-sec text-[1em] leading-relaxed">
+                  Complete prenatal classes, delivery suites, and postnatal support for mothers and babies.
+                </p>
+                <a href="#" class="secondary-btn w-max px-0 group-hover:text-third transition-colors duration-300">
+                  Read More
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+
+              <!-- Card 6: Oncology -->
+              <div class="group dept-card flex flex-col gap-[1em] p-[1.75em] rounded-[1em] border-2 border-acc-white hover:border-third bg-white transition-all cursor-pointer">
+
+                <div class="w-20 h-20 rounded-full bg-sec group-hover:bg-third flex items-center justify-center transition-colors duration-300">
+                  <img src="svgs/dna-broken.svg" alt="" class="w-16 h-auto aspect-square object-cover object-center">
+                </div>
+
+                <h3 class="font-bold text-txt-main text-[1.5em]">Oncology</h3>
+                <p class="text-txt-sec text-[1em] leading-relaxed">
+                  Personalized chemotherapy, radiation therapy, and immunotherapy plans with 24/7 patient support.
+                </p>
+
+                <a href="#" class="secondary-btn w-max px-0 group-hover:text-third transition-colors duration-300">
+                  Read More
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer></footer>
   </body>
 </html>

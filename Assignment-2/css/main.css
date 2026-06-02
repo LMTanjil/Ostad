@@ -10,7 +10,6 @@
   --color-txt-sec: #7A7A7A;
   --font-inter: 'Inter', sans-serif;
   --font-poppins: 'Poppins', sans-serif;
-
 }
 
 @layer base {
@@ -35,34 +34,10 @@
     @apply w-full
   }
 
-  /*drop downlink style*/
-  .dropbtn {
-    @apply bg-third text-main px-4 py-4 text-base border-0 cursor-pointer;
+  .nav-links-wrap ul li a{
+    @apply flex items-center gap-[0.3em] hover:text-sec transition-colors text-base text-txt-main font-normal;
   }
 
-  .dropdown {
-    @apply relative;
-  }
-
-  .dropdown-content {
-    @apply hidden absolute bg-[#f9f9f9] min-w-50 shadow-[0px_8px_16px_0px_rgba(0,0,0,0.2)];
-  }
-
-  .dropdown-content a {
-    @apply text-black px-4 py-3 no-underline block;
-  }
-
-  .dropdown-content a:hover {
-    @apply bg-[#f1f1f1];
-  }
-
-  .dropdown:hover .dropdown-content {
-    @apply block;
-  }
-
-  .dropdown:hover .dropbtn {
-    @apply bg-third;
-  }
   /* ** Top Bar Styles ** */
   .top-bar{
     @apply flex justify-center bg-sec;
@@ -84,6 +59,15 @@
   }
   .nav-links ul li a{
     @apply text-base text-main;
+  }
+  .nav-links ul li a::after {
+    content: '';
+    @apply absolute bottom-0 left-1/2 right-1/2 h-0.5 bg-blue-500;
+    transition: left 0.25s ease, right 0.25s ease;
+  }
+
+  .nav-links ul li a:hover{
+    @apply text-blue-400;
   }
   .nav-cta{
     @apply flex items-center gap-1 text-sm font-medium focus:outline-none;
@@ -107,4 +91,15 @@
   .nav-links-wrap ul{
     @apply flex items-center gap-4;
   }
+  .nav-links-wrap ul li a{
+    @apply font-semibold font-inter text-base/6 flex justify-center items-center gap-1;
+  }
+
+  .primary-btn{
+    @apply bg-sec px-4 py-2 text-base font-medium focus:outline-none rounded-full flex items-center justify-center gap-1 text-main;
+  }
+  .secondary-btn{
+    @apply bg-main px-4 py-2 text-base font-medium focus:outline-none rounded-full flex items-center justify-center gap-1 text-sec;
+  }
+
 }
