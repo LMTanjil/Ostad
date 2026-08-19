@@ -33,6 +33,13 @@ Thumbs.db
 .vscode/
 .idea/
 
+# Nested repositories managed separately
+/Assignment-3/Ostad-Assignment-3/
+/Assignment-4/javascript-assignment/
+/assignment-06-nodejs/
+/assignment-07-nodejs/
+/assignment-08-expressjs/
+
 # Temporary files
 *.tmp
 *.temp
