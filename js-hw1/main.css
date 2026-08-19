@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+/* ── Calculator Card ── */
+
+@layer base{
+
+  main {
+    @apply bg-[#faf9f7] rounded-2xl w-full shadow-[0_4px_6px_rgba(0,0,0,0.04),0_12px_40px_rgba(0,0,0,0.08)] border-2 border-[rgba(180,150,80,0.45)];
+  }
+  
+  /* ── Display ── */
+  .display {
+    @apply bg-[#f4f2ee] rounded-t-2xl p-4 flex flex-col justify-end items-end;
+  }
+  
+  .display-history-icon {
+    @apply self-start text-[#a08040] mb-auto;
+  }
+  
+  .display-expression {
+    @apply text-2xl text-[#9b8860] font-normal tracking-[0.3px] min-h-7;
+  }
+  
+  .display-result {
+    @apply text-5xl font-medium text-[#2c2418] leading-[1.1] tracking-[-1px] min-h-20;
+  }
+  
+  
+  /* ── Button Grid ── */
+  .btn-grid {
+    @apply grid grid-cols-4 gap-2 p-4;
+  }
+  
+  .btn {
+    @apply rounded-[14px] font-['Inter'] text-[1.25rem] font-normal cursor-pointer flex items-center justify-center transition-[filter,transform] duration-100 [-webkit-tap-highlight-color:transparent] active:scale-[0.94] active:brightness-[0.93] p-4;
+  }
+  
+  /* Number buttons */
+  .btn-num {
+    @apply bg-white text-[#2c2418] border border-[rgba(180,150,80,0.18)];
+  }
+  
+  /* Utility buttons (AC, +/-, %) */
+  .btn-ac {
+    @apply bg-[#f9d4d4] text-[#7a3030];
+  }
+  
+  .btn-util {
+    @apply bg-[#e8e4de] text-[#4a3f30];
+  }
+  
+  /* Operator buttons (÷, ×, −, +) */
+  .btn-op {
+    @apply bg-[#f5a623] text-[#5a3a00] text-[1.3rem];
+  }
+  
+  /* Equals */
+  .btn-eq {
+    @apply bg-[#f5a623] text-[#5a3a00] text-[1.3rem];
+  }
+  
+  /* Backspace */
+  .btn-back {
+    @apply bg-[#e8e4de] text-[#4a3f30];
+  }
+  
+  /* Zero spans 1 col (same as others) */
+  .btn-zero {
+    @apply bg-white text-[#2c2418] border border-[rgba(180,150,80,0.18)];
+  }
+}

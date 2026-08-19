@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="./output.css">
+  <script src="./app.js" defer></script>
+</head>
+<body class="w-full flex justify-center items-center min-h-dvh bg-[#f0eeea]">
+  <main class="max-w-120 flex flex-col gap-4 border-cmn">
+    
+
+    <!-- Display -->
+    <div class="display">
+      <div class="display-history-icon">
+        <img src="./assets/history.svg" alt="History Icon" class="w-5 h-5 opacity-70">
+      </div>
+      <div class="display-expression mt-4" id="input"></div>
+      <div class="display-result mb-4" id="result"></div>
+    </div>
+
+    <!-- Buttons -->
+    <div class="btn-grid">
+      <!-- Row 1 -->
+      <button class="btn btn-ac">AC</button>
+      <button class="btn btn-util">+/−</button>
+      <button class="btn btn-util">%</button>
+      <button class="btn btn-op">÷</button>
+
+      <!-- Row 2 -->
+      <button class="btn btn-num">7</button>
+      <button class="btn btn-num">8</button>
+      <button class="btn btn-num">9</button>
+      <button class="btn btn-op">×</button>
+
+      <!-- Row 3 -->
+      <button class="btn btn-num">4</button>
+      <button class="btn btn-num">5</button>
+      <button class="btn btn-num">6</button>
+      <button class="btn btn-op">−</button>
+
+      <!-- Row 4 -->
+      <button class="btn btn-num">1</button>
+      <button class="btn btn-num">2</button>
+      <button class="btn btn-num">3</button>
+      <button class="btn btn-op">+</button>
+
+      <!-- Row 5 -->
+      <button class="btn btn-num">0</button>
+      <button class="btn btn-num">.</button>
+      <button class="btn btn-eq">=</button>
+      <button class="btn btn-back">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 4H8l-7 8 7 8h13a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2z"></path>
+          <line x1="18" y1="9" x2="12" y2="15"></line>
+          <line x1="12" y1="9" x2="18" y2="15"></line>
+        </svg>
+      </button>
+    </div>
+  </main>
+</body>
+</html>
